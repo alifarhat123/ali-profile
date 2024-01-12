@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet"    href="ali.css">
+
+
+<title>crud</title>
+</head>
+
+<body>
+    <div class="cruds">
+      <div class="head">
+        <h2>cruds</h2>
+        <p>proudact mangment system</p>
+      </div>
+      <div class="inputs">
+        <input type="text" id="title" placeholder="title">
+        <div class="price">
+          <input onkeyup="getTotal()"  type="number" id="price" placeholder="price">
+          <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+          <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+          <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+          <small id="total"></small>
+        </div>
+        <input placeholder="count" type="number" id="count">
+        <input placeholder="category" type="text" id="category">
+        <button id="submint">create</button>
+
+
+      </div>
+      <div class="outputs">
+       <div class="searchBlock">
+         <input onkeyup="searchData(this.value)" type="text" placeholder="search" id="search">
+         <div class="Btnsearch">
+                <button onclick="getsearchMood(this.id)" id="searchtitle">search by title</button>
+                <button onclick="getsearchMood(this.id)" id="searchCategory">search by category  </button>
+
+
+         </div>
+
+
+       </div>
+       <div id="deleteAll">
+        
+       </div>
+         <table>
+             <th>id</th>
+             <th>tittle</th>
+             <th>price</th>
+             <th>taxes</th>
+             <th>ads</th>
+             <th>discount</th>
+             <th>total</th>
+             <th>category</th>
+             <th>update</th>
+             <th>delete</th>
+            
+            </tr>
+                <tbody id="tbody">
+                  
+                </tbody>
+
+         </table>
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+   
+
+
+
+
+    
+
+
+
+
+
+<script src="alii.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
+
+
+
+
+
